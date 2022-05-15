@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.workspace {
+    max-width: 400px;
+    height: 50vh;
+    margin: 150px auto  ;
+    box-shadow: 0px 0px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: hsl(216, 12%, 8%);
+    border-radius: 20px;
+}
+.workspace div {
+    margin-left:25px ;
+}
+.star {
+    background-color:hsl(213, 19%, 18%);
+    margin-top: 15px;
+    width: 30px;
+    height:30px;
+    border-radius: 15px;  
+}
+.star img {
+    width: 15px;
+    margin-left:7px;
+    margin-top: 5px;  
+}
+.one {
+    font-size: 15px;
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+.one h1  {
+    color: white;
+    margin-top: 5px;
+}
+ .one p {
+   color: hsl(217, 12%, 63%);
+}
+.rating {
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    height: 30px;   
+}
+.button {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color:hsl(213, 19%, 18%);
+    color: hsl(216, 12%, 54%);
+    border: 1px hsl(213, 19%, 18%);  
+}
+.button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    cursor: pointer;
+}
+.rating div {
+    margin-top: 5px;
+}
+.rating div input #one{
+    margin-left: 0;
+}
+.submit {
+    width: 330px;
+    background-color:  hsl(25, 97%, 53%);
+    color: white;
+    height: 35px;
+    border-radius: 17px;
+    margin-bottom: 10px;  
+} 
+.submit p {
+    text-align: center;
+    margin-top: 4px;
+    font-size: 17px;
+    letter-spacing: 1.5px;  
+} 
+.submit:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+ .thankyou-box {
+    display: flex;
+    align-items:space-around;  
+}
+.thankyou-box {
+    display: none;
+}
+.star2 img {
+    width:130px;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+.select p {
+    width: 150px;
+    margin-left: 80px;
+    text-align: center;
+    border-radius:20px ;
+    background-color: hsl(213, 19%, 18%);
+    color:hsl(25, 85%, 61%) ;
+    font-size: 15px;     
+}
+.thankyou {
+    width: 330px;
+    height: 130px;  
+}
+.thankyou h1 {
+    text-align: center;
+    color: white;
+}
+.thankyou p {
+    margin-top: 10px;
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    margin-left: 15px;
+}
+@media  screen and (max-width:375px) {
+    .workspace {
+        width: 250px;
+    }
+    .rating {
+        width: 120px;
+    }
+    .button {
+        width: 15px;
+        height: 15px;
+        margin-top: 20px;
+    }
+    .submit {
+        width: 190px;
+    }
+    .thankyou-box {
+        width: 250px;
+    }
+    .star2 img {
+        width: 120px;
+        margin-left: 40px;
+    }
+    .select p {
+        width: 150px;
+        margin-left: 30px;
+    }
+    .thankyou {
+        width: 250px;
+    }
+    .thankyou p {
+        margin-left: 5px;
+        text-overflow: clip;
+    }
+    .text {
+      text-overflow: clip;
+    }   
+}
+   
+
+
+
+
+
+
+  

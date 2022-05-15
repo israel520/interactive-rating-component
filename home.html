@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>interactive rating component</title>
+        <meta name="description">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="home.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigion>
+        <link href="https:..fonts.googleapis.com/css2?family=overpass&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <div id="main" class="workspace main">
+                <div class="star">
+                    <img src="icon-star.svg" alt="">
+                </div>
+                <div class="one">
+                    <h1>How did we do?</h1>
+                    <p>Please let us know how we did with your support<br>
+                       request.All feedback is appreciated to help us<br>
+                       improve our offering! </p>
+                </div>
+                <div class="rating">
+                    <div><button  class="button" id="1" onclick="myButton(this.id)">1</button></div>
+                    <div><button  class="button" id="2" onclick="myButton(this.id)" >2</button></div>
+                    <div><button  class="button" id="3" onclick="myButton(this.id)">3</button></div>
+                    <div><button  class="button" id="4" onclick="myButton(this.id)">4</button></div>
+                    <div><button  class="button" id="5" onclick="myButton(this.id)">5</button></div>     
+                </div>
+                <div class="submit" type="submit" id="submit" role="button" onclick="myFunction()"><p>submit</p></div>
+            </div>
+            <div id="thanksbox" class="workspace thankyou-box">
+                
+                    <div class="star2"><img  src="illustration-thank-you.svg"> </div>
+                    <div class="select"><p>You selected <span id="selected"></span> out of 5.</p></div>
+                    <div class="thankyou">
+                        <h1>Thank you!</h1>
+                        <p class="text"> we appreciate you taking the time to give a rating.<br>
+                               &nbsp; if you ever need more support.don't hesitate to <br>
+                               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   get in touch! </p>
+
+            </div>
+        </section>
+        <script>
+           function myButton( clicked_id) {
+              let selected= document.getElementById('selected');
+              selected.innerHTML=clicked_id;
+           }
+        
+         function myFunction() {
+             const thanksbox=document.getElementById('thanksbox');
+             const main=document.getElementById('main');
+             if(thanksbox.style.display==='none'){
+                 thanksbox.style.display='block';
+                 thanksbox.style.display='flex';
+                 main.style.display='none';
+             }
+             else {
+                 thanksbox.style.display='none';
+             }
+         }
+        </script>
+    </body>
+</html>
